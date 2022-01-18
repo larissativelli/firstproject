@@ -7,15 +7,17 @@ def start_game():
 def roll_dice():
     return (random.choice(lista))
     
-def resposta(x):
-    if x in lista:
-        print(roll_dice)
-        
-    
-    else:
-        print("Insira uma escolha válida")
+def resposta():
+    x = input()
+    while True:
+        if x in lista:
+            print(roll_dice())
+            break
+        else:
+            print("Insira uma escolha válida")
+            return resposta()
         
 
 start_game()
 
-resposta(input())
+resposta()
