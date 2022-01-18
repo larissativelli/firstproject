@@ -9,8 +9,8 @@ def roll_dice():
     
 def resposta(x):
     if x in lista:
-        print(x)
-        return roll_dice()
+        print(roll_dice)
+        
     
     else:
         print("Insira uma escolha válida")
