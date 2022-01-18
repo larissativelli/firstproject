@@ -14,7 +14,7 @@ def resposta():
             print(roll_dice())
             break
         else:
-            print("Insira uma escolha válida")
+            print("Insira uma escolha válida entre (Pedra, papel ou tesoura)!")
             return resposta()
         
 
